@@ -1,0 +1,14 @@
+<?
+$PERM["buyer-profile"]["2"]="D";
+$PERM["buyer-profile"]["3"]="D";
+$PERM["buyer-profile"]["4"]="D";
+$PERM["buyer-profile"]["7"]="X";
+$PERM["buyer-profile"]["6"]="D";
+$PERM["buyer-profile"]["5"]="D";
+$PERM["seller-profile"]["2"]="D";
+$PERM["seller-profile"]["3"]="D";
+$PERM["seller-profile"]["4"]="D";
+$PERM["seller-profile"]["7"]="D";
+$PERM["seller-profile"]["6"]="X";
+$PERM["seller-profile"]["5"]="D";
+?>
