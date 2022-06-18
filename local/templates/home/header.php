@@ -1,33 +1,35 @@
-<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
-<?IncludeTemplateLangFile(__FILE__);?>
+<? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die(); ?>
+<? IncludeTemplateLangFile(__FILE__); ?>
 <!DOCTYPE html>
-<html lang="<?=LANGUAGE_ID;?>">
+<html lang="<?= LANGUAGE_ID; ?>">
+
 <head>
-    <title><?$APPLICATION->ShowTitle();?></title>
-    <?$APPLICATION->ShowHead();?>
+    <title><? $APPLICATION->ShowTitle(); ?></title>
+    <? $APPLICATION->ShowHead(); ?>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900|Roboto+Mono:300,400,500">
 
     <?
-        $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/fonts/icomoon/style.css");
-        $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/fonts/flaticon/font/flaticon.css");
-        $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/bootstrap.min.css");
-        $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/magnific-popup.css");
-        $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/jquery-ui.css");
-        $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/owl.carousel.min.css");
-        $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/owl.theme.default.min.css");
-        $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/bootstrap-datepicker.css");
-        $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/mediaelementplayer.css");
-        $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/animate.css");
-        $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/fl-bigmug-line.css");
-        $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/aos.css");
-        $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/style.css");
+    $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . "/fonts/icomoon/style.css");
+    $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . "/fonts/flaticon/font/flaticon.css");
+    $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . "/css/bootstrap.min.css");
+    $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . "/css/magnific-popup.css");
+    $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . "/css/jquery-ui.css");
+    $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . "/css/owl.carousel.min.css");
+    $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . "/css/owl.theme.default.min.css");
+    $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . "/css/bootstrap-datepicker.css");
+    $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . "/css/mediaelementplayer.css");
+    $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . "/css/animate.css");
+    $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . "/css/fl-bigmug-line.css");
+    $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . "/css/aos.css");
+    $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . "/css/style.css");
     ?>
 
 </head>
+
 <body>
-<?$APPLICATION->ShowPanel();?>
-<!-- <div class="site-loader"></div> -->
+<? $APPLICATION->ShowPanel(); ?>
+<div class="site-loader"></div>
 
 <div class="site-wrap">
 
@@ -71,7 +73,7 @@
 
                         <ul class="site-menu js-clone-nav d-none d-lg-block">
                             <li class="active">
-                                <a href="index.html">Home</a>
+                                <a href="/">Home</a>
                             </li>
                             <li class="has-children">
                                 <a href="properties.html">Properties</a>
@@ -104,7 +106,7 @@
 
 <div class="slide-one-item home-slider owl-carousel">
 
-    <div class="site-blocks-cover" style="background-image: url(<?=SITE_TEMPLATE_PATH;?>/images/hero_bg_1.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+    <div class="site-blocks-cover" style="background-image: url(<?= SITE_TEMPLATE_PATH; ?>/images/hero_bg_1.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
 
         <div class="text">
             <h2>853 S Lucerne Blvd</h2>
@@ -117,7 +119,7 @@
         </div>
     </div>
 
-    <div class="site-blocks-cover" style="background-image: url(<?=SITE_TEMPLATE_PATH;?>/images/hero_bg_3.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+    <div class="site-blocks-cover" style="background-image: url(<?= SITE_TEMPLATE_PATH; ?>/images/hero_bg_3.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
 
         <div class="text">
             <h2>625 S. Berendo St</h2>
@@ -180,7 +182,7 @@
             <div class="col-md-6 col-lg-4 mb-4">
                 <a href="property-details.html" class="prop-entry d-block">
                     <figure>
-                        <img src="<?=SITE_TEMPLATE_PATH;?>/images/img_1.jpg" alt="Image" class="img-fluid">
+                        <img src="<?= SITE_TEMPLATE_PATH; ?>/images/img_1.jpg" alt="Image" class="img-fluid">
                     </figure>
                     <div class="prop-text">
                         <div class="inner">
@@ -214,7 +216,7 @@
             <div class="col-md-6 col-lg-4 mb-4">
                 <a href="property-details.html" class="prop-entry d-block">
                     <figure>
-                        <img src="<?=SITE_TEMPLATE_PATH;?>/images/img_2.jpg" alt="Image" class="img-fluid">
+                        <img src="<?= SITE_TEMPLATE_PATH; ?>/images/img_2.jpg" alt="Image" class="img-fluid">
                     </figure>
                     <div class="prop-text">
                         <div class="inner">
@@ -248,7 +250,7 @@
             <div class="col-md-6 col-lg-4 mb-4">
                 <a href="property-details.html" class="prop-entry d-block">
                     <figure>
-                        <img src="<?=SITE_TEMPLATE_PATH;?>/images/img_3.jpg" alt="Image" class="img-fluid">
+                        <img src="<?= SITE_TEMPLATE_PATH; ?>/images/img_3.jpg" alt="Image" class="img-fluid">
                     </figure>
                     <div class="prop-text">
                         <div class="inner">
@@ -283,7 +285,7 @@
             <div class="col-md-6 col-lg-4 mb-4">
                 <a href="property-details.html" class="prop-entry d-block">
                     <figure>
-                        <img src="<?=SITE_TEMPLATE_PATH;?>/images/img_4.jpg" alt="Image" class="img-fluid">
+                        <img src="<?= SITE_TEMPLATE_PATH; ?>/images/img_4.jpg" alt="Image" class="img-fluid">
                     </figure>
                     <div class="prop-text">
                         <div class="inner">
@@ -317,7 +319,7 @@
             <div class="col-md-6 col-lg-4 mb-4">
                 <a href="property-details.html" class="prop-entry d-block">
                     <figure>
-                        <img src="<?=SITE_TEMPLATE_PATH;?>/images/img_5.jpg" alt="Image" class="img-fluid">
+                        <img src="<?= SITE_TEMPLATE_PATH; ?>/images/img_5.jpg" alt="Image" class="img-fluid">
                     </figure>
                     <div class="prop-text">
                         <div class="inner">
@@ -351,7 +353,7 @@
             <div class="col-md-6 col-lg-4 mb-4">
                 <a href="property-details.html" class="prop-entry d-block">
                     <figure>
-                        <img src="<?=SITE_TEMPLATE_PATH;?>/images/img_6.jpg" alt="Image" class="img-fluid">
+                        <img src="<?= SITE_TEMPLATE_PATH; ?>/images/img_6.jpg" alt="Image" class="img-fluid">
                     </figure>
                     <div class="prop-text">
                         <div class="inner">
@@ -457,7 +459,7 @@
         </div>
         <div class="row">
             <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="100">
-                <a href="#"><img src="<?=SITE_TEMPLATE_PATH;?>/images/img_4.jpg" alt="Image" class="img-fluid"></a>
+                <a href="#"><img src="<?= SITE_TEMPLATE_PATH; ?>/images/img_4.jpg" alt="Image" class="img-fluid"></a>
                 <div class="p-4 bg-white">
                     <span class="d-block text-secondary small text-uppercase">Jan 20th, 2019</span>
                     <h2 class="h5 text-black mb-3"><a href="#">When To Sell &amp; How Much To Sell?</a></h2>
@@ -465,7 +467,7 @@
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="200">
-                <a href="#"><img src="<?=SITE_TEMPLATE_PATH;?>/images/img_2.jpg" alt="Image" class="img-fluid"></a>
+                <a href="#"><img src="<?= SITE_TEMPLATE_PATH; ?>/images/img_2.jpg" alt="Image" class="img-fluid"></a>
                 <div class="p-4 bg-white">
                     <span class="d-block text-secondary small text-uppercase">Jan 20th, 2019</span>
                     <h2 class="h5 text-black mb-3"><a href="#">When To Sell &amp; How Much To Sell?</a></h2>
@@ -473,7 +475,7 @@
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="300">
-                <a href="#"><img src="<?=SITE_TEMPLATE_PATH;?>/images/img_3.jpg" alt="Image" class="img-fluid"></a>
+                <a href="#"><img src="<?= SITE_TEMPLATE_PATH; ?>/images/img_3.jpg" alt="Image" class="img-fluid"></a>
                 <div class="p-4 bg-white">
                     <span class="d-block text-secondary small text-uppercase">Jan 20th, 2019</span>
                     <h2 class="h5 text-black mb-3"><a href="#">When To Sell &amp; How Much To Sell?</a></h2>
@@ -502,7 +504,7 @@
 
                 <div class="slide-item">
                     <div class="team-member text-center">
-                        <img src="<?=SITE_TEMPLATE_PATH;?>/images/person_1.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle mx-auto">
+                        <img src="<?= SITE_TEMPLATE_PATH; ?>/images/person_1.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle mx-auto">
                         <div class="text p-3">
                             <h2 class="mb-2 font-weight-light text-black h4">Megan Smith</h2>
                             <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
@@ -518,7 +520,7 @@
 
                 <div class="slide-item">
                     <div class="team-member text-center">
-                        <img src="<?=SITE_TEMPLATE_PATH;?>/images/person_2.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle mx-auto">
+                        <img src="<?= SITE_TEMPLATE_PATH; ?>/images/person_2.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle mx-auto">
                         <div class="text p-3">
                             <h2 class="mb-2 font-weight-light text-black h4">Brooke Cagle</h2>
                             <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
@@ -534,7 +536,7 @@
 
                 <div class="slide-item">
                     <div class="team-member text-center">
-                        <img src="<?=SITE_TEMPLATE_PATH;?>/images/person_3.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle mx-auto">
+                        <img src="<?= SITE_TEMPLATE_PATH; ?>/images/person_3.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle mx-auto">
                         <div class="text p-3">
                             <h2 class="mb-2 font-weight-light text-black h4">Philip Martin</h2>
                             <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
@@ -550,7 +552,7 @@
 
                 <div class="slide-item">
                     <div class="team-member text-center">
-                        <img src="<?=SITE_TEMPLATE_PATH;?>/images/person_1.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle mx-auto">
+                        <img src="<?= SITE_TEMPLATE_PATH; ?>/images/person_1.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle mx-auto">
                         <div class="text p-3">
                             <h2 class="mb-2 font-weight-light text-black h4">Megan Smith</h2>
                             <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
@@ -566,7 +568,7 @@
 
                 <div class="slide-item">
                     <div class="team-member text-center">
-                        <img src="<?=SITE_TEMPLATE_PATH;?>/images/person_2.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle mx-auto">
+                        <img src="<?= SITE_TEMPLATE_PATH; ?>/images/person_2.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle mx-auto">
                         <div class="text p-3">
                             <h2 class="mb-2 font-weight-light text-black h4">Brooke Cagle</h2>
                             <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
@@ -582,7 +584,7 @@
 
                 <div class="slide-item">
                     <div class="team-member text-center">
-                        <img src="<?=SITE_TEMPLATE_PATH;?>/images/person_3.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle mx-auto">
+                        <img src="<?= SITE_TEMPLATE_PATH; ?>/images/person_3.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle mx-auto">
                         <div class="text p-3">
                             <h2 class="mb-2 font-weight-light text-black h4">Philip Martin</h2>
                             <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
@@ -598,7 +600,7 @@
 
                 <div class="slide-item">
                     <div class="team-member text-center">
-                        <img src="<?=SITE_TEMPLATE_PATH;?>/images/person_1.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle mx-auto">
+                        <img src="<?= SITE_TEMPLATE_PATH; ?>/images/person_1.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle mx-auto">
                         <div class="text p-3">
                             <h2 class="mb-2 font-weight-light text-black h4">Megan Smith</h2>
                             <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
@@ -614,7 +616,7 @@
 
                 <div class="slide-item">
                     <div class="team-member text-center">
-                        <img src="<?=SITE_TEMPLATE_PATH;?>/images/person_2.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle mx-auto">
+                        <img src="<?= SITE_TEMPLATE_PATH; ?>/images/person_2.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle mx-auto">
                         <div class="text p-3">
                             <h2 class="mb-2 font-weight-light text-black h4">Brooke Cagle</h2>
                             <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
@@ -630,7 +632,7 @@
 
                 <div class="slide-item">
                     <div class="team-member text-center">
-                        <img src="<?=SITE_TEMPLATE_PATH;?>/images/person_3.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle mx-auto">
+                        <img src="<?= SITE_TEMPLATE_PATH; ?>/images/person_3.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle mx-auto">
                         <div class="text p-3">
                             <h2 class="mb-2 font-weight-light text-black h4">Philip Martin</h2>
                             <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
