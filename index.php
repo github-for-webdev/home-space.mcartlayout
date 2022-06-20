@@ -70,10 +70,7 @@ $APPLICATION->SetTitle("HomeSpace — Colorlib Website Template"); ?>
                 <h2>853 S Lucerne Blvd</h2>
                 <p class="location"><span class="property-icon icon-room"></span> Los Angeles, CA 90005</p>
                 <p class="mb-2"><strong>$2,250,500</strong></p>
-
-
                 <p class="mb-0"><a href="#" class="text-uppercase small letter-spacing-1 font-weight-bold">More Details</a></p>
-
             </div>
         </div>
 
@@ -83,10 +80,7 @@ $APPLICATION->SetTitle("HomeSpace — Colorlib Website Template"); ?>
                 <h2>625 S. Berendo St</h2>
                 <p class="location"><span class="property-icon icon-room"></span>607 Los Angeles, CA 90005</p>
                 <p class="mb-2"><strong>$2,250,500</strong></p>
-
-
                 <p class="mb-0"><a href="#" class="text-uppercase small letter-spacing-1 font-weight-bold">More Details</a></p>
-
             </div>
 
         </div>
@@ -714,7 +708,8 @@ $APPLICATION->SetTitle("HomeSpace — Colorlib Website Template"); ?>
         "SORT_ORDER2" => "ASC",
         "STRICT_SECTION_CHECK" => "N"
     )
-); ?><? $APPLICATION->IncludeComponent(
+); ?>
+<? $APPLICATION->IncludeComponent(
     "bitrix:news.line",
     "",
     array(
@@ -732,7 +727,8 @@ $APPLICATION->SetTitle("HomeSpace — Colorlib Website Template"); ?>
         "SORT_ORDER1" => "DESC",
         "SORT_ORDER2" => "ASC"
     )
-); ?><? $APPLICATION->IncludeComponent(
+); ?>
+<? $APPLICATION->IncludeComponent(
     "bitrix:main.include",
     "",
     array(
@@ -740,4 +736,5 @@ $APPLICATION->SetTitle("HomeSpace — Colorlib Website Template"); ?>
         "AREA_FILE_SUFFIX" => "inc",
         "EDIT_TEMPLATE" => ""
     )
-); ?><? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
+); ?>
+<? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
