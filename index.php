@@ -82,6 +82,25 @@ $APPLICATION->SetTitle("HomeSpace — Colorlib Website Template"); ?>
                     </div>
                 </div>
             </div>
+            <? /* $APPLICATION->IncludeComponent(
+                "bitrix:news.line",
+                "",
+                Array(
+                    "ACTIVE_DATE_FORMAT" => "d.m.Y",
+                    "CACHE_GROUPS" => "Y",
+                    "CACHE_TIME" => "300",
+                    "CACHE_TYPE" => "A",
+                    "DETAIL_URL" => "",
+                    "FIELD_CODE" => array("", ""),
+                    "IBLOCKS" => array(),
+                    "IBLOCK_TYPE" => "ads",
+                    "NEWS_COUNT" => "9",
+                    "SORT_BY1" => "ACTIVE_FROM",
+                    "SORT_BY2" => "SORT",
+                    "SORT_ORDER1" => "DESC",
+                    "SORT_ORDER2" => "ASC"
+                )
+            ); */ ?>
             <div class="row mb-5">
                 <div class="col-md-6 col-lg-4 mb-4">
                     <a href="property-details.html" class="prop-entry d-block">
@@ -336,6 +355,25 @@ $APPLICATION->SetTitle("HomeSpace — Colorlib Website Template"); ?>
                     </div>
                 </div>
             </div>
+            <? /* $APPLICATION->IncludeComponent(
+                "bitrix:news.line",
+                "",
+                Array(
+                    "ACTIVE_DATE_FORMAT" => "d.m.Y",
+                    "CACHE_GROUPS" => "Y",
+                    "CACHE_TIME" => "300",
+                    "CACHE_TYPE" => "A",
+                    "DETAIL_URL" => "",
+                    "FIELD_CODE" => array("", ""),
+                    "IBLOCKS" => array(),
+                    "IBLOCK_TYPE" => "news",
+                    "NEWS_COUNT" => "3",
+                    "SORT_BY1" => "ACTIVE_FROM",
+                    "SORT_BY2" => "SORT",
+                    "SORT_ORDER1" => "DESC",
+                    "SORT_ORDER2" => "ASC"
+                )
+            ); */ ?>
             <div class="row">
                 <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="100">
                     <a href="#"><img alt="Image" src="/local/templates/home/images/img_4.jpg" class="img-fluid"></a>

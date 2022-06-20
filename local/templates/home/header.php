@@ -118,7 +118,7 @@
                     <nav class="site-navigation text-right text-md-right" role="navigation">
 
                         <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
-                        <? $APPLICATION->IncludeComponent(
+                        <? /* $APPLICATION->IncludeComponent(
                             "bitrix:menu",
                             "",
                             array(
@@ -130,10 +130,10 @@
                                 "MENU_CACHE_TIME" => "3600",
                                 "MENU_CACHE_TYPE" => "N",
                                 "MENU_CACHE_USE_GROUPS" => "Y",
-                                //"ROOT_MENU_TYPE" => "top",
+                                "ROOT_MENU_TYPE" => "top",
                                 "USE_EXT" => "N"
                             )
-                        ); ?>
+                        ); */ ?>
                         <ul class="site-menu js-clone-nav d-none d-lg-block">
                             <li class="active">
                                 <a href="/">Home</a>
