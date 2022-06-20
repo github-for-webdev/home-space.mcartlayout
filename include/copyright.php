@@ -1,5 +1,1 @@
-<p>© 2001-2014 «Название компании»</p>
- 
-<p>Проспект Мира, 35, строение 2, офис 34</p>
- 
-<p><b>Телефон: (495) 212-85-06</b></p>
+Copyright &copy;<?= date("Y"); ?> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
