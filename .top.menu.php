@@ -33,14 +33,14 @@ $aMenuLinks = Array(
 		"/account/seller-profile/", 
 		Array(), 
 		Array(), 
-		"CSite::InGroup(array(1,6))" 
+		"CSite::InGroup(array(6))" 
 	),
 	Array(
 		"Личный кабинет покупателя", 
 		"/account/buyer-profile/", 
 		Array(), 
 		Array(), 
-		"CSite::InGroup(array(1,7))" 
+		"CSite::InGroup(array(7))" 
 	)
 );
 ?>
