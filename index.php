@@ -120,7 +120,7 @@ $APPLICATION->SetTitle("HomeSpace — Colorlib Website Template"); ?>
             Array(
                 "ACTIVE_DATE_FORMAT" => "d.m.Y",
                 "CACHE_GROUPS" => "Y",
-                "CACHE_TIME" => "300",
+                "CACHE_TIME" => "36000000",
                 "CACHE_TYPE" => "A",
                 "DETAIL_URL" => "/ads/#ELEMENT_CODE#/",
                 "FIELD_CODE" => array(

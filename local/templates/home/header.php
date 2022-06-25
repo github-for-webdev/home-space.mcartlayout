@@ -138,3 +138,16 @@
         </div>
     </div>
 </div>
+<? if ($APPLICATION->GetCurPage() !== "/") :
+    $APPLICATION->IncludeComponent(
+        "bitrix:breadcrumb",
+        "nav",
+        Array(
+            "PATH" => "",
+            "SITE_ID" => "s1",
+            "START_FROM" => "0"
+        )
+    );
+endif ?>
+
+
