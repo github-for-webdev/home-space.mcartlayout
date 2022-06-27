@@ -14,7 +14,7 @@ for ($index = 1; $index < $itemSize; $index++)
 {
     if ($arResult[$index]["LINK"] == $arResult[--$index]["LINK"]) continue;
     $title = htmlspecialcharsex($arResult[$index]["TITLE"]);
-    if (!$arResult[$index]["LINK"] && $arResult[$index]["LINK"] !== $APPLICATION->GetCurPage())
+    if ($arResult[$index]["LINK"] !== "" && $arResult[$index]["LINK"] !== $APPLICATION->GetCurPage())
     {
         $strReturn .= '
             <span class="mx-2 text-white">&bullet;</span>
