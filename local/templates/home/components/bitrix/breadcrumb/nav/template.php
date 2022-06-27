@@ -12,16 +12,16 @@ $strReturn = '
 ';
 for ($index = 1; $index < $itemSize; $index++)
 {
-    if ($arResult[$index]["LINK"] == $arResult[--$index]["LINK"]) continue;
+    if ($arResult[$index]["LINK"] == $arResult[$index - 1]["LINK"]) continue;
     $title = htmlspecialcharsex($arResult[$index]["TITLE"]);
-    if ($arResult[$index]["LINK"] !== "" && $arResult[$index]["LINK"] !== $APPLICATION->GetCurPage())
+    if ($arResult[$index]["LINK"] <> "" && $index != $itemSize - 1)
     {
         $strReturn .= '
             <span class="mx-2 text-white">&bullet;</span>
             <a href="' . $arResult[$index]["LINK"] . '"<strong class="text-white">' . $title . '</strong></a>
         ';
     }
-    elseif ($arResult[$index] == $arResult[count(--$arResult)])
+    else
     {
         $strReturn .= '
             <span class="mx-2 text-white">&bullet;</span>
