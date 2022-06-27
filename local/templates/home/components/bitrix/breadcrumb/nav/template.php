@@ -8,7 +8,7 @@ $strReturn = '
             <div class="row align-items-center justify-content-center text-center">
                 <div class="col-md-10">
                     <h1 class="mb-2">' . $APPLICATION->GetTitle() . '</h1>
-                        <div><a href="' . SITE_DIR . '">Главная страница</a>
+                        <div><a href="' . SITE_DIR . '">' . $arResult[0]["TITLE"] . '</a>
 ';
 for ($index = 1; $index < $itemSize; $index++)
 {
