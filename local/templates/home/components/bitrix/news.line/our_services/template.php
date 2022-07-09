@@ -4,7 +4,7 @@
 <div class="row justify-content-center">
     <div class="col-md-7 text-center mb-5">
         <div class="site-section-title">
-            <h2>Our Services</h2>
+            <h2><?= GetMessage("TITLE_SERVICE"); ?></h2>
         </div>
     </div>
 </div>
@@ -18,7 +18,7 @@
             <a href="#" class="service text-center border rounded">
                 <span class="icon flaticon-<?= $arItem["PROPERTY_CLASS_FLATICON_VALUE"]; ?>"</span>
                 <h2 class="service-heading"><?= $arItem["NAME"]; ?></h2>
-                <p><span class="read-more">Learn More</span></p>
+                <p><span class="read-more"><?= GetMessage("SERVICE_READ"); ?></span></p>
             </a>
         </div>
     <?endforeach;?>

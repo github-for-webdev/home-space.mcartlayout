@@ -2,10 +2,10 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="dd294674-56af-48d6-8773-d8d0473b7ae1" name="mcart@51.250.69.239">
-        <fileTransfer rootFolder="/home/bitrix/www/" accessType="SFTP" host="51.250.69.239" port="22" sshConfigId="4208e8fc-16bb-4088-92f1-14a4a1c8e3a4" sshConfig="study@51.250.69.239:22 key" keyPair="true">
+      <webServer id="dfe8d108-9d95-4696-aef0-3778d52bbcca" name="51.250.88.15" url="http://51.250.88.15">
+        <fileTransfer rootFolder="/home/bitrix/www/" accessType="SFTP" host="51.250.88.15" port="22" sshConfigId="56a7b542-d5de-4a68-9fa6-6761f6d9f4a6" sshConfig="study@51.250.88.15:22 key" keyPair="true">
           <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
         </fileTransfer>
       </webServer>

@@ -4,7 +4,7 @@
 <div class="row justify-content-center mb-5">
     <div class="col-md-7 text-center">
         <div class="site-section-title">
-            <h2>Our Blog</h2>
+            <h2><?= GetMessage("TITLE_BLOG"); ?></h2>
         </div>
     </div>
 </div>
