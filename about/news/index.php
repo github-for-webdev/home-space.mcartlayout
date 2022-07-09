@@ -1,8 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-
 $APPLICATION->SetTitle("Новости");
-?><?$APPLICATION->IncludeComponent(
+$APPLICATION->IncludeComponent(
 	"bitrix:news",
 	"",
 	Array(
@@ -29,7 +28,10 @@ $APPLICATION->SetTitle("Новости");
 		"DETAIL_PROPERTY_CODE" => array("",""),
 		"DETAIL_SET_CANONICAL_URL" => "N",
 		"DISPLAY_BOTTOM_PAGER" => "Y",
+		"DISPLAY_DATE" => "Y",
 		"DISPLAY_NAME" => "Y",
+		"DISPLAY_PICTURE" => "Y",
+		"DISPLAY_PREVIEW_TEXT" => "Y",
 		"DISPLAY_TOP_PAGER" => "N",
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
 		"IBLOCK_ID" => "",
@@ -50,9 +52,13 @@ $APPLICATION->SetTitle("Новости");
 		"PAGER_TEMPLATE" => ".default",
 		"PAGER_TITLE" => "Новости",
 		"PREVIEW_TRUNCATE_LEN" => "",
-		"SEF_FOLDER" => "/news/",
+		"SEF_FOLDER" => "/about/news/",
 		"SEF_MODE" => "Y",
-		"SEF_URL_TEMPLATES" => Array("detail"=>"#ELEMENT_CODE#.html","news"=>"","section"=>""),
+		"SEF_URL_TEMPLATES" => Array(
+            "detail" => "#ELEMENT_CODE#.html",
+            "news" => "",
+            "section" => ""
+        ),
 		"SET_LAST_MODIFIED" => "N",
 		"SET_STATUS_404" => "N",
 		"SET_TITLE" => "Y",
@@ -68,6 +74,8 @@ $APPLICATION->SetTitle("Новости");
 		"USE_RATING" => "N",
 		"USE_REVIEW" => "N",
 		"USE_RSS" => "N",
-		"USE_SEARCH" => "N"
+		"USE_SEARCH" => "N",
+		"USE_SHARE" => "N"
 	)
-);?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+);
+require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

@@ -1,11 +1,9 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Объявления");?>
-
-
 <?$APPLICATION->IncludeComponent(
 	"bitrix:news",
-	"",
+	"ads",
 	Array(
 		"ADD_ELEMENT_CHAIN" => "N",
 		"ADD_SECTIONS_CHAIN" => "Y",
@@ -33,7 +31,7 @@ $APPLICATION->SetTitle("Объявления");?>
 		"DISPLAY_NAME" => "Y",
 		"DISPLAY_TOP_PAGER" => "N",
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
-		"IBLOCK_ID" => "1",
+		"IBLOCK_ID" => "5",
 		"IBLOCK_TYPE" => "news",
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
 		"LIST_ACTIVE_DATE_FORMAT" => "d.m.Y",
