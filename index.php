@@ -22,7 +22,7 @@ $APPLICATION->SetTitle("HomeSpace — Colorlib Website Template"); ?>
         "CACHE_TIME" => "36000000",
         "CACHE_TYPE" => "A",
         "CHECK_DATES" => "Y",
-        "DETAIL_URL" => "/ads/#ELEMENT_CODE#/",
+        "DETAIL_URL" => "/ads/#ELEMENT_CODE#.html",
         "DISPLAY_BOTTOM_PAGER" => "Y",
         "DISPLAY_DATE" => "Y",
         "DISPLAY_NAME" => "Y",
@@ -122,7 +122,7 @@ $APPLICATION->SetTitle("HomeSpace — Colorlib Website Template"); ?>
                 "CACHE_GROUPS" => "Y",
                 "CACHE_TIME" => "36000000",
                 "CACHE_TYPE" => "A",
-                "DETAIL_URL" => "/ads/#ELEMENT_CODE#/",
+                "DETAIL_URL" => "/ads/#ELEMENT_CODE#.html",
                 "FIELD_CODE" => array(
                     "NAME",
                     "PREVIEW_PICTURE",
@@ -155,7 +155,10 @@ $APPLICATION->SetTitle("HomeSpace — Colorlib Website Template"); ?>
                 "CACHE_TIME" => "300",
                 "CACHE_TYPE" => "A",
                 "DETAIL_URL" => "",
-                "FIELD_CODE" => array("NAME","PROPERTY_CLASS_FLATICON"),
+                "FIELD_CODE" => array(
+                    "NAME",
+                    "PROPERTY_CLASS_FLATICON"
+                ),
                 "IBLOCKS" => array("7"),
                 "IBLOCK_TYPE" => "services",
                 "NEWS_COUNT" => "20",
@@ -177,7 +180,7 @@ $APPLICATION->SetTitle("HomeSpace — Colorlib Website Template"); ?>
                 "CACHE_GROUPS" => "Y",
                 "CACHE_TIME" => "300",
                 "CACHE_TYPE" => "A",
-                "DETAIL_URL" => "/about/news/#ELEMENT_CODE#/",
+                "DETAIL_URL" => "/about/news/#ELEMENT_CODE#.html",
                 "FIELD_CODE" => array(
                     "NAME",
                     "PREVIEW_TEXT",
@@ -212,8 +215,7 @@ $APPLICATION->SetTitle("HomeSpace — Colorlib Website Template"); ?>
                     2 => "NAME",
                     3 => "PREVIEW_TEXT",
                     4 => "PREVIEW_PICTURE",
-                    5 => "DETAIL_TEXT",
-                    6 => "",
+                    5 => "DETAIL_TEXT"
             ),
             "IBLOCKS" => array(
                 0 => "6",

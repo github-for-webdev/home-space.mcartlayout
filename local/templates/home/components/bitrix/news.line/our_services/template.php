@@ -15,7 +15,7 @@
         $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
         ?>
         <div class="col-md-6 col-lg-4 mb-4" id="<?= $this->GetEditAreaId($arItem['ID']); ?>">
-            <a href="#" class="service text-center border rounded">
+            <a href="https://mail.google.com" class="service text-center border rounded">
                 <span class="icon flaticon-<?= $arItem["PROPERTY_CLASS_FLATICON_VALUE"]; ?>"</span>
                 <h2 class="service-heading"><?= $arItem["NAME"]; ?></h2>
                 <p><span class="read-more"><?= GetMessage("SERVICE_READ"); ?></span></p>
