@@ -20,5 +20,5 @@ $MESS["PARAGRAPH"] = "Paragraph";
 $MESS["NO_IMAGES"] = "No Images";
 $MESS["YES"] = "Yes";
 $MESS["NO"] = "No";
-$MESS["MATERIALS"] = "Additional Materials";
+$MESS["ADDITIONAL_MATERIALS"] = "Additional Materials";
 $MESS["LINKS"] = "Links to External Resources";

@@ -121,15 +121,15 @@ $this->setFrameMode(true);
                             <? endif; ?>
                     </div>
                     <div class="mt-5">
-                        <h2 class="h4 text-black mb-3"><?= GetMessage("MATERIALS"); ?></h2>
+                        <h2 class="h4 text-black mb-3"><?= GetMessage("ADDITIONAL_MATERIALS"); ?></h2>
                         <? if ($arResult["DISPLAY_PROPERTIES"]["ADDITIONAL_MATERIALS"]["FILE_VALUE"]["ID"]) : ?>
                             <div>
-                                <a href="<?= $arResult["DISPLAY_PROPERTIES"]["ADDITIONAL_MATERIALS"]["FILE_VALUE"]["SRC"]; ?>"><?= GetMessage("MATERIALS"); ?></a>
+                                <a href="<?= $arResult["DISPLAY_PROPERTIES"]["ADDITIONAL_MATERIALS"]["FILE_VALUE"]["SRC"]; ?>"><?= GetMessage("ADDITIONAL_MATERIALS"); ?></a>
                             </div>
                         <? elseif ($arResult["DISPLAY_PROPERTIES"]["ADDITIONAL_MATERIALS"]["FILE_VALUE"][0]) : ?>
                             <? for ($i = 0; $i < count($arResult["DISPLAY_PROPERTIES"]["ADDITIONAL_MATERIALS"]["FILE_VALUE"]); $i++) : ?>
                                 <div>
-                                    <a href="<?=$arResult["DISPLAY_PROPERTIES"]["ADDITIONAL_MATERIALS"]["FILE_VALUE"][$i]["SRC"]?>"><?= GetMessage("MATERIALS"); ?></a>
+                                    <a href="<?=$arResult["DISPLAY_PROPERTIES"]["ADDITIONAL_MATERIALS"]["FILE_VALUE"][$i]["SRC"]?>"><?= GetMessage("ADDITIONAL_MATERIALS"); ?></a>
                                 </div>
                             <? endfor; ?>
                         <? endif; ?>

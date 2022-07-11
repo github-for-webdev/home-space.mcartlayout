@@ -20,5 +20,5 @@ $MESS["PARAGRAPH"] = "Заметка";
 $MESS["NO_IMAGES"] = "Изображений нет";
 $MESS["YES"] = "Да";
 $MESS["NO"] = "Нет";
-$MESS["MATERIALS"] = "Дополнительные материалы";
+$MESS["ADDITIONAL_MATERIALS"] = "Дополнительные материалы";
 $MESS["LINKS"] = "Ссылки на внешние ресурсы";
