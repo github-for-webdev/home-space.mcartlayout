@@ -41,7 +41,10 @@
             "PRIORITY_DEAL",
             "HOME_TYPE",
             "PRICE",
-            "IMAGES"
+            "IMAGES",
+			"NUM_FLOORS",
+			"ADDITIONAL_MATERIALS",
+			"LINKS"
         ),
 		"DETAIL_SET_CANONICAL_URL" => "N",
 		"DISPLAY_BOTTOM_PAGER" => "Y",

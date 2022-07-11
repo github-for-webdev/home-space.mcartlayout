@@ -30,15 +30,6 @@ $this->setFrameMode(true);
             <div class="col-lg-8" style="margin-top: -150px;">
                 <div class="mb-5">
                     <div class="slide-one-item home-slider owl-carousel">
-                        <? if (!$arResult["DISPLAY_PROPERTIES"]["IMAGES"]["FILE_VALUE"]["ID"]) : ?>
-                            <div>
-                                <img
-                                        src="<?= $arResult["PREVIEW_PICTURE"]["SRC"]; ?>"
-                                        alt="<?= $arResult["PREVIEW_PICTURE"]["ALT"]; ?>"
-                                        class="img-fluid"
-                                >
-                            </div>
-                        <? endif; ?>
                         <? if ($arResult["DISPLAY_PROPERTIES"]["IMAGES"]["FILE_VALUE"]["ID"]) : ?>
                             <div>
                                 <img
@@ -51,8 +42,8 @@ $this->setFrameMode(true);
                             <? for ($i = 0; $i < count($arResult["DISPLAY_PROPERTIES"]["IMAGES"]["FILE_VALUE"]); $i++) : ?>
                                 <div>
                                     <img
-                                        src="<?=$arResult["DISPLAY_PROPERTIES"]["IMAGES"]["FILE_VALUE"][$i]["SRC"]?>"
-                                        alt="<?=$arResult["DISPLAY_PROPERTIES"]["IMAGES"]["FILE_VALUE"][$i]["ORIGINAL_NAME"]?>"
+                                        src="<?= $arResult["DISPLAY_PROPERTIES"]["IMAGES"]["FILE_VALUE"][$i]["SRC"]; ?>"
+                                        alt="<?= $arResult["DISPLAY_PROPERTIES"]["IMAGES"]["FILE_VALUE"][$i]["ORIGINAL_NAME"]; ?>"
                                         class="img-fluid">
                                 </div>
                             <? endfor; ?>
@@ -67,12 +58,12 @@ $this->setFrameMode(true);
                         <div class="col-md-6">
                             <ul class="property-specs-wrap mb-3 mb-lg-0  float-lg-right">
                                 <li>
-                                    <span class="property-specs"><?= GetMessage("BEDS"); ?></span>
-                                    <span class="property-specs-number"><?= $arResult["DISPLAY_PROPERTIES"]["NUM_BEDS"]["VALUE"]; ?><sup>+</sup></span>
+                                    <span class="property-specs"><?= GetMessage("UPDATE_DATE"); ?></span>
+                                    <span class="property-specs-number"><?= date("d.m.y", strtotime($arResult["TIMESTAMP_X"])); ?></span>
                                 </li>
                                 <li>
-                                    <span class="property-specs"><?= GetMessage("BATHS"); ?></span>
-                                    <span class="property-specs-number"><?= $arResult["DISPLAY_PROPERTIES"]["NUM_BATHROOMS"]["VALUE"]; ?></span>
+                                    <span class="property-specs"><?= GetMessage("FLOORS"); ?></span>
+                                    <span class="property-specs-number"><?= $arResult["DISPLAY_PROPERTIES"]["NUM_FLOORS"]["VALUE"]; ?></span>
                                 </li>
                                 <li>
                                     <span class="property-specs"><?= GetMessage("SQ_FT"); ?></span>
@@ -83,16 +74,18 @@ $this->setFrameMode(true);
                     </div>
                     <div class="row mb-5">
                         <div class="col-md-6 col-lg-4 text-left border-bottom border-top py-3">
-                            <span class="d-inline-block text-black mb-0 caption-text"><?= GetMessage("HOME_TYPE"); ?></span>
-                            <strong class="d-block"><?= $arResult["DISPLAY_PROPERTIES"]["HOME_TYPE"]["VALUE"]; ?></strong>
+                            <span class="d-inline-block text-black mb-0 caption-text"><?= GetMessage("BATHS"); ?></span>
+                            <strong class="d-block"><?= $arResult["DISPLAY_PROPERTIES"]["NUM_BATHROOMS"]["VALUE"]; ?></strong>
                         </div>
                         <div class="col-md-6 col-lg-4 text-left border-bottom border-top py-3">
-                            <span class="d-inline-block text-black mb-0 caption-text"><?= GetMessage("YEAR_BUILT"); ?></span>
-                            <strong class="d-block"><?= $arResult["DISPLAY_PROPERTIES"]["YEAR_BUILT"]["VALUE"]; ?></strong>
-                        </div>
-                        <div class="col-md-6 col-lg-4 text-left border-bottom border-top py-3">
-                            <span class="d-inline-block text-black mb-0 caption-text"><?= GetMessage("PRICE"); ?>/<?= GetMessage("SQ_FT"); ?></span>
-                            <strong class="d-block">$<?= number_format($arResult["DISPLAY_PROPERTIES"]["PRICE"]["VALUE"] / $arResult["DISPLAY_PROPERTIES"]["SQ_FT"]["VALUE"], 2); ?></strong>
+                            <span class="d-inline-block text-black mb-0 caption-text"><?= GetMessage("GARAGES"); ?></span>
+                            <strong class="d-block">
+                                <? if ($arResult["DISPLAY_PROPERTIES"]["NUM_GARAGES"]["VALUE"]) : ?>
+                                    <?= GetMessage("YES"); ?>
+                                <? else : ?>
+                                    <?= GetMessage("NO"); ?>
+                                <? endif; ?>
+                            </strong>
                         </div>
                     </div>
                     <h2 class="h4 text-black"><?= GetMessage("MORE_INFO"); ?></h2>
@@ -126,6 +119,28 @@ $this->setFrameMode(true);
                             <? else : ?>
                                 <div class="col-sm-6 col-md-4 col-lg-3 mb-4"><?= GetMessage("NO_IMAGES"); ?></div>
                             <? endif; ?>
+                    </div>
+                    <div class="mt-5">
+                        <h2 class="h4 text-black mb-3"><?= GetMessage("MATERIALS"); ?></h2>
+                        <? if ($arResult["DISPLAY_PROPERTIES"]["ADDITIONAL_MATERIALS"]["FILE_VALUE"]["ID"]) : ?>
+                            <div>
+                                <a href="<?= $arResult["DISPLAY_PROPERTIES"]["ADDITIONAL_MATERIALS"]["FILE_VALUE"]["SRC"]; ?>"><?= GetMessage("MATERIALS"); ?></a>
+                            </div>
+                        <? elseif ($arResult["DISPLAY_PROPERTIES"]["ADDITIONAL_MATERIALS"]["FILE_VALUE"][0]) : ?>
+                            <? for ($i = 0; $i < count($arResult["DISPLAY_PROPERTIES"]["ADDITIONAL_MATERIALS"]["FILE_VALUE"]); $i++) : ?>
+                                <div>
+                                    <a href="<?=$arResult["DISPLAY_PROPERTIES"]["ADDITIONAL_MATERIALS"]["FILE_VALUE"][$i]["SRC"]?>"><?= GetMessage("MATERIALS"); ?></a>
+                                </div>
+                            <? endfor; ?>
+                        <? endif; ?>
+                    </div>
+                    <div class="mt-5">
+                        <h2 class="h4 text-black mb-3"><?= GetMessage("LINKS"); ?></h2>
+                        <? for ($i = 0; $i < count($arResult["DISPLAY_PROPERTIES"]["LINKS"]["VALUE"]); $i++) : ?>
+                            <p>
+                                <a href="<?= $arResult["DISPLAY_PROPERTIES"]["LINKS"]["VALUE"][$i]; ?>"><?= GetMessage("LINKS"); ?></a>
+                            </p>
+                        <? endfor; ?>
                     </div>
                 </div>
             </div>
