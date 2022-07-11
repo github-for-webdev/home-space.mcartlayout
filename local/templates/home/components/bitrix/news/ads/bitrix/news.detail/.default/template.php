@@ -129,7 +129,7 @@ $this->setFrameMode(true);
                         <? elseif ($arResult["DISPLAY_PROPERTIES"]["ADDITIONAL_MATERIALS"]["FILE_VALUE"][0]) : ?>
                             <? for ($i = 0; $i < count($arResult["DISPLAY_PROPERTIES"]["ADDITIONAL_MATERIALS"]["FILE_VALUE"]); $i++) : ?>
                                 <div>
-                                    <a href="<?=$arResult["DISPLAY_PROPERTIES"]["ADDITIONAL_MATERIALS"]["FILE_VALUE"][$i]["SRC"]?>"><?= GetMessage("ADDITIONAL_MATERIALS"); ?></a>
+                                    <a href="<?= $arResult["DISPLAY_PROPERTIES"]["ADDITIONAL_MATERIALS"]["FILE_VALUE"][$i]["SRC"]; ?>"><?= GetMessage("ADDITIONAL_MATERIALS"); ?></a>
                                 </div>
                             <? endfor; ?>
                         <? endif; ?>
@@ -137,9 +137,9 @@ $this->setFrameMode(true);
                     <div class="mt-5">
                         <h2 class="h4 text-black mb-3"><?= GetMessage("LINKS"); ?></h2>
                         <? for ($i = 0; $i < count($arResult["DISPLAY_PROPERTIES"]["LINKS"]["VALUE"]); $i++) : ?>
-                            <p>
+                            <div>
                                 <a href="<?= $arResult["DISPLAY_PROPERTIES"]["LINKS"]["VALUE"][$i]; ?>"><?= GetMessage("LINKS"); ?></a>
-                            </p>
+                            </div>
                         <? endfor; ?>
                     </div>
                 </div>
