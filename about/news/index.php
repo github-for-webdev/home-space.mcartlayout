@@ -1,9 +1,8 @@
-<?
-require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Новости");
-$APPLICATION->IncludeComponent(
+<? require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php"); ?>
+<? $APPLICATION->SetTitle("Новости"); ?>
+<? $APPLICATION->IncludeComponent(
 	"bitrix:news",
-	"",
+	"news",
 	Array(
 		"ADD_ELEMENT_CHAIN" => "N",
 		"ADD_SECTIONS_CHAIN" => "Y",
@@ -77,5 +76,5 @@ $APPLICATION->IncludeComponent(
 		"USE_SEARCH" => "N",
 		"USE_SHARE" => "N"
 	)
-);
-require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+); ?>
+<? require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
