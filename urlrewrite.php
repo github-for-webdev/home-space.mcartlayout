@@ -8,7 +8,7 @@ $arUrlRewrite=array (
     'PATH' => '/account/seller-profile/my-posts/index.php',
     'SORT' => 100,
   ),
-  7 => 
+  9 => 
   array (
     'CONDITION' => '#^/about/news/#',
     'RULE' => '',
