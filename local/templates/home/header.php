@@ -79,6 +79,23 @@
                 </div>
                 <div class="col-6 col-md-6 text-right">
                     <div>
+                        <? global $USER;
+                        if (!$USER->IsAuthorized()) : ?>
+                            <a href="/login/">Авторизация</a>
+                        <? else : ?>
+                            <? $APPLICATION->IncludeComponent(
+	"bitrix:system.auth.form", 
+	"auth", 
+	array(
+		"REGISTER_URL" => "/registration.php",
+		"FORGOT_PASSWORD_URL" => "",
+		"PROFILE_URL" => "",
+		"SHOW_ERRORS" => "N",
+		"COMPONENT_TEMPLATE" => "auth"
+	),
+	false
+); ?>
+                        <? endif; ?>
                         <? $APPLICATION->IncludeComponent(
                             "bitrix:main.include",
                             "",
